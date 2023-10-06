@@ -1,3 +1,42 @@
-h3{
-    color:blueviolet;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 40px;
+    align-items: center;
+}
+.title-details ul{
+    display: flex;
+}
+.title-details li{
+    list-style: none;
+    padding: 5px;
+}
+.title-details li a{
+    text-decoration: none;
+    color: black;
+}
+
+@media  screen and (max-width:576px) {
+    body{
+        background-color: aqua;
+
+    }
+    .container{
+        flex-direction: column;
+        align-items: normal;
+    }
+    h3{
+        text-align: center;
+    }
+    .title-details ul{
+        flex-direction: column;
+        text-align: center;
+    }
+    
 }
